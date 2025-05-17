@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe of My Favorite Food</title>
+    <style>
+        body {
+            background-color: #faf0f1;
+        }
 
-  </head>
-  <body style="background-color: #faf0f1; margin: 0 auto;">
+        header.top, footer {
+            background-color: hsl(0, 84%, 83%);
+            text-align: center;
+        }
 
-    <header style="background-color: hsl(0, 84%, 83%); text-align: center;">~ Fantasia's Cooking Page ~</header>
-    <header style="background-color: #f9daf1;">
-        <h1 style="color: #030303; text-align: center; padding: 20px;">Let's get COOKING!</h1>
+        header.title {
+            background-color: #f9daf1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            margin: 10px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #99004d;
+        }
+
+        h2, h3 {
+            margin-left: 20px;
+        }
+
+        img.oatmeal-main, img.oatmeal-decor {
+            display: block;
+            margin: 20px auto;
+            width: 500px;
+            border: 3px solid black;
+        }
+
+        ul, ol {
+            margin-left: 40px;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="top">~ Fantasia's Cooking Page ~</header>
+    
+    <header class="title">
+        <h1>Let's get COOKING!</h1>
     </header>
 
     <p><a href="https://www.byuh.edu/">Where I Studied?</a></p>
     <p><a href="../index.html">About Me?</a></p>
-    <p><a href="#Cooking Instruction">Quick Link</a></p>
+    <p><a href="#Cooking-Instruction">Quick Link</a></p>
     <hr>
 
     <h2>Quick Cook Oatmeal</h2>
-    <img src="\Activity-03\Images\oatmeal.jpg" alt="Delicious Oatmeal" width="500px">
+    <img src="\Activity-03\Images\oatmeal.jpg" alt="Delicious Oatmeal" class="oatmeal-main">
 
     <h3>Ingredients:</h3>
     <ul type="circle">
@@ -75,14 +123,15 @@
         <li>Serve warm.</li>
     </ol>
 
-    <img src="https://feelgoodfoodie.net/wp-content/uploads/2019/01/How-to-Make-Oatmeal-10.jpg" alt="Delicious Oatmeal" width="300" style="border: 3px solid black; border-radius: 15px; box-shadow: 5px 5px 15px grey;">
-    
+    <img src="\Activity-03\Images\oatmeal2.jpg" alt="Delicious Oatmeal" class="oatmeal-decor">
+
     <h2>Video Instruction</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/LIDgn9PK4ok?si=G5wuR1e11myEKK4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <footer style="background-color: hsl(0, 84%, 83%); text-align: center; padding: 10px;">
+    <footer>
         <p><sub>&copy; 2025 Fantasia Tseu</sub></p>
     </footer>
 
 </body>
+
 </html>
