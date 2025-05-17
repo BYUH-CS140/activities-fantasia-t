@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe of My Favorite Food</title>
     <style>
+        /* background color */
         body {
             background-color: #faf0f1;
         }
 
+        /* Styling header and footer */
         header.top, footer {
             background-color: hsl(0, 84%, 83%);
             text-align: center;
         }
 
+        /* Title section styling */
         header.title {
             background-color: #f9daf1;
             text-align: center;
             padding: 20px;
         }
 
+        /* Paragraph styling */
         p {
             margin: 10px 20px;
         }
 
-        a {
-            text-decoration: none;
-            color: #99004d;
-        }
-
+        /* Headings styling */
         h2, h3 {
             margin-left: 20px;
         }
 
+        /* Styling for images */
         img.oatmeal-main, img.oatmeal-decor {
             display: block;
             margin: 20px auto;
@@ -41,16 +42,29 @@
             border: 3px solid black;
         }
 
+        /* Styling for lists */
         ul, ol {
             margin-left: 40px;
         }
 
+        /* Styling for iframe */
         iframe {
             display: block;
-            margin: 20px auto ;
+            margin: 20px auto;
         }
 
+        /* Class for highlighted links */
+        .link {
+            color: #99004d;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
+        /* Centers the video and adds a margin around it for spacing */
+        .video {
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 
@@ -61,15 +75,15 @@
         <h1>Let's get COOKING!</h1>
     </header>
 
-    <p><a href="https://www.byuh.edu/">Where I Studied?</a></p>
-    <p><a href="../index.html">About Me?</a></p>
-    <p><a href="#Cooking-Instruction">Quick Link</a></p>
+    <p><a href="https://www.byuh.edu/" class="link">Where I Studied?</a></p>
+    <p><a href="../index.html" class="link">About Me?</a></p>
+    <p><a href="#Cooking-Instruction" class="link">Quick Link</a></p>
     <hr>
 
     <h2>Quick Cook Oatmeal</h2>
     <img src="https://feelgoodfoodie.net/wp-content/uploads/2019/01/How-to-Make-Oatmeal-10.jpg" alt="Delicious Oatmeal" class="oatmeal-main">
 
-    <h3>Ingredients:</h3>
+    <h3 class="ingredients">Ingredients:</h3>
     <ul type="circle">
         <li>Base Recipe
             <ul type="disc">
@@ -126,7 +140,7 @@
     <img src="https://feelgoodfoodie.net/wp-content/uploads/2019/01/How-to-Make-Oatmeal-10.jpg" alt="Delicious Oatmeal" class="oatmeal-decor">
 
     <h2>Video Instruction</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LIDgn9PK4ok?si=G5wuR1e11myEKK4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LIDgn9PK4ok?si=G5wuR1e11myEKK4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <footer>
         <p><sub>&copy; 2025 Fantasia Tseu</sub></p>
