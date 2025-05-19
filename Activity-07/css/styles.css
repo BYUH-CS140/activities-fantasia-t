@@ -1,60 +1,60 @@
 
-        /* background color */
-        body {
-            background-color: #faf0f1;
-        }
+/* background color */
+body {
+background-color: #faf0f1;
+}
 
-        /* Styling header and footer */
-        header.top, footer {
-            background-color: hsl(0, 84%, 83%);
-            text-align: center;
-        }
+/* Styling header and footer */
+header.top, footer {
+background-color: hsl(0, 84%, 83%);
+text-align: center;
+}
 
-        /* Title section styling */
-        header.title {
-            background-color: #f9daf1;
-            text-align: center;
-            padding: 20px;
-        }
+/* Title section styling */
+header.title {
+background-color: #f9daf1;
+text-align: center;
+padding: 20px;
+}
 
-        /* Paragraph styling */
-        p {
-            margin: 10px 20px;
-        }
+/* Paragraph styling */
+p {
+margin: 10px 20px;
+}
 
-        /* Headings styling */
-        h2, h3 {
-            margin-left: 20px;
-        }
+/* Headings styling */
+h2, h3 {
+margin-left: 20px;
+}
 
-        /* Styling for images */
-        img.oatmeal1, img.oatmeal2 {
-            display: block;
-            margin: 20px auto;
-            width: 300px;
-            border: 3px solid black;
-        }
+/* Styling for images */
+img.oatmeal1, img.oatmeal2 {
+display: block;
+margin: 20px auto;
+width: 300px;
+border: 3px solid black;
+}
 
-        /* Styling for lists */
-        ul, ol {
-            margin-left: 40px;
-        }
+/* Styling for lists */
+ul, ol {
+margin-left: 40px;
+}
 
-        /* Styling for iframe */
-        iframe {
-            display: block;
-            margin: 20px auto;
-        }
+/* Styling for iframe */
+iframe {
+display: block;
+margin: 20px auto;
+}
 
-        /* Class for highlighted links */
-        .link {
-            color: #99004d;
-            font-weight: bold;
-            text-decoration: none;
-        }
+/* Class for highlighted links */
+.link {
+color: #99004d;
+font-weight: bold;
+text-decoration: none;
+}
 
-        /* Centers the video and adds a margin around it for spacing */
-        .video {
-            display: block;
-            margin: 20px auto;
-        }
+/* Centers the video and adds a margin around it for spacing */
+.video {
+display: block;
+margin: 20px auto;
+}
