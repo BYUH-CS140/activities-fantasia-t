@@ -1,0 +1,86 @@
+
+/* background color */
+body {
+background-color: #fad6b6;
+}
+
+/* Styling header and footer */
+header.top, footer {
+background-color: #1672d4;
+text-align: center;
+color: #ffffff;
+}
+
+/* Title section styling */
+header.title {
+background-color: #fccb03;
+text-align: center;
+padding: 20px;
+}
+
+/* Class for highlighted links */
+.link {
+color: #de1c06;
+font-weight: bold;
+text-decoration: none;
+}
+
+.link2 {
+text-decoration: none;
+color:#960925
+}
+
+h2 {
+font-weight: bold;
+color: #050001;
+text-align: center;
+margin-top: 20px;
+}
+
+/* Paragraph styling */
+p {
+margin: 10px 20px;
+}
+
+/* Headings styling */
+h2, h3 ,h4{
+margin-left: 20px;
+}
+
+
+figure {
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    width: fit-content; 
+}
+
+/* Styling for images */
+img {
+    display: block;
+    width: 600px;
+    border: 3px solid black;
+}
+
+/* Styling for lists */
+ul, ol {
+margin-left: 10px;
+}
+
+/* Styling for iframe */
+iframe {
+display: block;
+margin: 20px auto;
+}
+
+
+
+/* Centers the video and adds a margin around it for spacing */
+.video {
+display: block;
+margin: 20px auto;
+}
+
+.section-space {
+    margin-top: 40px; 
+}
