@@ -1,8 +1,15 @@
 
 /* background color */
 body {
-background-color: #fad6b6;
+    background-color: #fad6b6; /* Fallback color */
+    background-image: url('../images/background.jpg');
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Makes the image fixed as you scroll */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    margin: 0; /* Ensures there's no margin around the body */
 }
+
 
 /* Styling header and footer */
 header.top, footer {
