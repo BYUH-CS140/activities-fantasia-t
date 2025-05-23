@@ -53,6 +53,11 @@ font-weight: bold;
 text-decoration: none;
 }
 
+.link:hover {
+  color: #99004d;
+  text-decoration: underline;
+}
+
 /* Centers the video and adds a margin around it for spacing */
 .video {
 display: block;

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* background color */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #faf0f1;
+}
+
+
+/* Styling header and footer */
+#page-header {
+  background-image: url("/Activity-08/images/pinkbg.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header.top, footer {
+background-color: hsl(0, 83%, 84%);
+text-align: center;
+}
+
+
+/* Title section styling */
+header.title {
+background-color: #f9daf1;
+text-align: center;
+padding: 20px;
+font-size: 2rem;
+letter-spacing: 0.05em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center
+}
+
+.nav-list > li {
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.nav-list a.link {
+  text-decoration: none;
+  color: #99004d;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-list a.link:hover {
+  color: #99004d;
+  text-decoration: underline;
+  background: #ffffff;
+}
+
+
+/* Headings styling */
+h2, h3 {
+margin-top: 20px;
+margin-left: 40px;
+}
+
+/* Styling for images */
+img.oatmeal1, img.oatmeal2 {
+display: block;
+margin: 20px auto;
+width: 300px;
+border: 3px solid black;
+}
+
+/* Styling for lists */
+ul, ol {
+margin-left: 60px;
+}
+
+/* Styling for iframe */
+iframe {
+display: block;
+margin: 20px auto;
+}
+
+
+/* Centers the video and adds a margin around it for spacing */
+.video {
+display: block;
+margin: 20px auto;
+}
+
+.resources {
+  background-color: #ffffffd2;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 15%;
+  margin: 20px auto;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
