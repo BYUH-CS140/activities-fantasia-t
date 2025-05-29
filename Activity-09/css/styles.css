@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* background color */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #faf0f1;
+}
+
+
+/* Styling header and footer */
+#page-header {
+  background-image: url("/Activity-08/images/pinkbg.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header.top,
+footer {
+  background-color: hsl(0, 83%, 84%);
+  text-align: center;
+}
+
+
+/* Title section styling */
+header.title {
+  background-color: #f9daf1;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+
+/* Navigation Menu */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.nav-list>li {
+  margin: 0.5rem 0;
+  background-color: rgba(213, 0, 0, 0.2);
+  border: 2px solid #99004d;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-list>li:hover {
+  background-color: rgba(213, 0, 0, 0.35);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list a.link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  color: #99004d;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-list a.link:hover {
+  color: #cc0066;
+  text-decoration: underline;
+}
+
+/* Simple dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9daf1;
+  border-radius: 30px;
+  padding: 5px;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 5px 0;
+}
+
+.dropdown-content a {
+  color: #99004d;
+  text-decoration: none;
+}
+
+
+/* Headings styling */
+h2,
+h3 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+/* Styling for images */
+img.oatmeal1,
+img.oatmeal2 {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  border: 3px solid black;
+}
+
+/* Styling for lists */
+ul,
+ol {
+  margin-left: 60px;
+}
+
+/* Styling for iframe */
+iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* Centers the video and adds a margin around it for spacing */
+.video {
+  display: block;
+  margin: 20px auto;
+}
+
+.resources-list {
+  font-size: 0.85rem;
+  margin-left: 40px;
+}
+
+footer {
+  margin-top: 30px;
+}
