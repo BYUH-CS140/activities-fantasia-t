@@ -10,7 +10,6 @@ body {
   background-color: #faf0f1;
 }
 
-
 /* Styling header and footer */
 #page-header {
   background-image: url("/Activity-09/images/pinkbg.jpg");
@@ -25,7 +24,6 @@ footer {
   text-align: center;
 }
 
-
 /* Title section styling */
 header.title {
   background-color: #f9daf1;
@@ -34,7 +32,6 @@ header.title {
   font-size: 2rem;
   letter-spacing: 0.05em;
 }
-
 
 /* Navigation Menu */
 .nav-list {
@@ -45,7 +42,7 @@ header.title {
   padding: 1rem 0;
 }
 
-.nav-list>li {
+.nav-list > li {
   margin: 0.5rem 0;
   background-color: rgba(213, 0, 0, 0.2);
   border: 2px solid #99004d;
@@ -54,7 +51,7 @@ header.title {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.nav-list>li:hover {
+.nav-list > li:hover {
   background-color: rgba(213, 0, 0, 0.35);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -102,7 +99,6 @@ header.title {
   text-decoration: none;
 }
 
-
 /* Headings styling */
 h2,
 h3 {
@@ -125,12 +121,25 @@ ol {
   margin-left: 60px;
 }
 
+/* New list style classes replacing obsolete type attributes */
+.circle-list {
+  list-style-type: circle;
+}
+
+.disc-list {
+  list-style-type: disc;
+}
+
+.square-list {
+  list-style-type: square;
+}
+
 /* Styling for iframe */
 iframe {
   display: block;
   margin: 20px auto;
+  border: none; /* Remove obsolete frameborder */
 }
-
 
 /* Centers the video and adds a margin around it for spacing */
 .video {
