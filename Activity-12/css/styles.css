@@ -1,0 +1,25 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 2fr [col3];
+    grid-template-rows: 1fr 2fr 6fr;
+    gap: 10px;
+    background-color: #f5f0f0;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #d79ef8;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.item1 {
+    grid-column: col1 / col3;
+    background-color: #8ceaff;
+}
+
+.item6 {
+    grid-column: col1 / col3;
+    background-color: #478896;
+}
