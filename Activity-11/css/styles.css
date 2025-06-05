@@ -1,16 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* background color */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #faf0f1;
 }
 
-/* Styling header and footer */
+/* Header */
 #page-header {
   background-image: url("/Activity-11/images/pinkbg.jpg");
   background-size: cover;
@@ -24,7 +17,7 @@ footer {
   text-align: center;
 }
 
-/* Title section styling */
+/* Title */
 header.title {
   background-color: #f9daf1;
   text-align: center;
@@ -33,7 +26,7 @@ header.title {
   letter-spacing: 0.05em;
 }
 
-/* Navigation Menu */
+/* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
@@ -72,7 +65,6 @@ header.title {
   text-decoration: underline;
 }
 
-/* Simple dropdown */
 .dropdown {
   position: relative;
 }
@@ -99,29 +91,26 @@ header.title {
   text-decoration: none;
 }
 
-/* Headings styling */
-h2,
-h3 {
+/* Headings */
+h2, h3 {
   margin-top: 20px;
   margin-left: 40px;
 }
 
 h2 {
-  margin-bottom: 10px; /* Spacing between h2 and p */
+  margin-bottom: 10px;
 }
 
-/* Styling for images */
-img.oatmeal1,
-img.oatmeal2 {
+/* Images */
+img.oatmeal {
   display: block;
   margin: 20px auto;
   width: 300px;
   border: 3px solid black;
 }
 
-/* Styling for lists */
-ul,
-ol {
+/* Lists */
+ul, ol {
   margin-left: 60px;
 }
 
@@ -137,17 +126,11 @@ ol {
   list-style-type: square;
 }
 
-/* Styling for iframe */
-iframe {
+/* Video */
+iframe.video {
   display: block;
   margin: 20px auto;
   border: none;
-}
-
-.video {
-  text-align: center;
-  display: block;
-  margin: 20px auto;
 }
 
 .resources-list {
@@ -155,39 +138,57 @@ iframe {
   margin-left: 40px;
 }
 
-footer {
-  margin-top: 30px;
-}
-
+/* Two-Column Layout */
 .two-columns {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px 40px;
   gap: 20px;
 }
 
 .column {
   flex: 1;
-  padding: 5px;
   background-color: #fce4ec;
   border: 2px solid #d81b60;
   border-radius: 10px;
+  padding: 20px;
 }
 
+.column h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.column p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Floated Image Section */
 .float-section {
   margin: 30px 40px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  min-height: 220px;
+  clear: both;
 }
 
 .float-image {
   float: left;
   width: 200px;
   margin-right: 20px;
+  margin-bottom: 20px;
   border: 2px solid #d81b60;
   border-radius: 10px;
 }
 
 .float-text {
   overflow: hidden;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
 }
