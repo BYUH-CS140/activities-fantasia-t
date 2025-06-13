@@ -1,0 +1,303 @@
+/* ======= Base Styles (Mobile First) ======= */
+
+body {
+  background-color: #f8f4f0; /* soft warm off-white */
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+/* Top header with subtle shadow and smooth color */
+header.top {
+  background-color: #2a7f62; /* deep teal */
+  text-align: center;
+  color: #f0e9db; /* creamy off-white */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* Title header with gradient background */
+header.title {
+  background: linear-gradient(90deg, #ffc857, #e9724c);
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 0 0 20px 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Navigation menu styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  display: block; /* vertical on mobile */
+  max-width: 300px;
+}
+
+nav ul li {
+  margin: 12px 0;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2a7f62;
+  font-weight: 600;
+  display: block;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #2a7f62;
+  color: #f0e9db;
+  outline: none;
+}
+
+/* Main content padding */
+main {
+  padding: 20px 15px;
+  max-width: 1200px; /* Increased max-width for better full screen */
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Reset article styling */
+article {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Intro paragraph style */
+.intro p {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Figure styling */
+figure {
+  margin: 25px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption p {
+  margin: 8px 0 0 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2a7f62;
+}
+
+figcaption cite {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #7a7a7a;
+}
+
+/* Headings */
+h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2a7f62;
+  border-bottom: 2px solid #ffc857;
+  padding-bottom: 8px;
+}
+
+h4 {
+  font-weight: 700;
+  color: #2a7f62;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Link style in list */
+.link2 {
+  text-decoration: none;
+  color: #e9724c;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+.link2:hover,
+.link2:focus {
+  text-decoration: underline;
+  color: #2a7f62;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2a7f62;
+  color: #f0e9db;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  border-radius: 20px 20px 0 0;
+}
+
+/* ======= Responsive Menu & Layout ======= */
+
+/* Medium devices (Tablets) */
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    max-width: none;
+    margin: 25px auto;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    padding: 14px 25px;
+    font-size: 1.15rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 30px 40px;
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section {
+    padding: 25px 20px;
+  }
+
+  /* Adjust info-columns for tablets */
+  .info-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px auto 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* 3 columns */
+    gap: 30px;
+    padding: 40px 50px;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+
+  nav ul li {
+    margin: 0 25px 0 0;
+  }
+
+  section {
+    padding: 25px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Separate columns with a subtle border */
+  main > section:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+  }
+
+  /* Remove right-column wrapper for desktop */
+  .right-column {
+    display: contents;
+  }
+
+  /* Info-columns 3-column layout */
+  .info-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px; /* Match main container width */
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile (small devices) fallback */
+@media (max-width: 599px) {
+  .info-columns {
+    display: block;
+    margin: 20px 0 0 0;
+  }
+}
