@@ -1,0 +1,254 @@
+/* Base Styles (Mobile First) */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #faf0f1;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Header */
+#page-header {
+  background-image: url("/Activity-13/images/pinkbg.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header.top,
+footer {
+  background-color: hsl(0, 83%, 84%);
+  text-align: center;
+}
+
+header.title {
+  background-color: #f9daf1;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation */
+
+/* Mobile: stack nav links vertically */
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.nav-list > li {
+  margin: 0.5rem 0;
+  background-color: rgba(213, 0, 0, 0.2);
+  border: 2px solid #99004d;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+}
+
+.nav-list > li:hover {
+  background-color: rgba(213, 0, 0, 0.35);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list a.link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  color: #99004d;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-list a.link:hover {
+  color: #cc0066;
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9daf1;
+  border-radius: 30px;
+  padding: 5px;
+  list-style: none;
+  min-width: 150px;
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 5px 0;
+}
+
+.dropdown-content a {
+  color: #99004d;
+  text-decoration: none;
+}
+
+/* Headings */
+h2, h3 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 60px;
+}
+
+.circle-list {
+  list-style-type: circle;
+}
+
+.disc-list {
+  list-style-type: disc;
+}
+
+.square-list {
+  list-style-type: square;
+}
+
+/* Images */
+img.oatmeal {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  border: 3px solid black;
+}
+
+/* Video */
+iframe.video {
+  display: block;
+  margin: 20px auto;
+  border: none;
+}
+
+/* Resources list */
+.resources-list {
+  font-size: 0.85rem;
+  margin-left: 40px;
+}
+
+/* Two-Column Layout */
+.two-columns {
+  display: flex;
+  flex-direction: column; /* stacked on mobile */
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  background-color: #fce4ec;
+  border: 2px solid #d81b60;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.column h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.column p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Floated Image Section */
+.float-section {
+  margin: 30px 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 220px;
+  clear: both;
+}
+
+.float-image {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #d81b60;
+  border-radius: 10px;
+}
+
+.float-text {
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    flex-direction: row; 
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-list > li {
+    margin: 0;
+    width: auto;
+  }
+
+  .dropdown-content {
+    top: 100%;
+    left: 0;
+  }
+
+  .two-columns {
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .float-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .float-image {
+    float: none;
+    margin: 0;
+    width: 300px;
+  }
+
+  .float-text {
+    flex: 1;
+  }
+}
