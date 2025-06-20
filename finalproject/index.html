@@ -3,48 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RecipeShare</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>10MinuteTastes</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">🍲 RecipeShare</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Submit Recipe</a></li>
-        <li><a href="#">My Cookbook</a></li>
-        <li><a href="#">Login</a></li>
+    <div class="logo">10MinuteTastes</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="funfacts.html">Fun Facts</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
       </ul>
     </nav>
-    <div class="menu-toggle">&#9776;</div>
   </header>
 
-  <main>
-    <section class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search recipes..." />
+  <main class="home-content">
+    <section class="hero">
+      <h1>Welcome to 10MinuteTastes!</h1>
+      <p>A place where busy students, workers, and beginners can find quick, easy, and delicious recipes you can make in just 10 minutes.</p>
+      <a class="btn" href="recipes.html">Explore Recipes</a>
     </section>
 
-    <section class="recipe-grid" id="recipeGrid">
-      <!-- Sample Recipe Cards -->
-      <div class="recipe-card">
-        <img src="images/sample1.jpg" alt="Spaghetti Bolognese">
-        <h3>Spaghetti Bolognese</h3>
-        <p>Classic Italian pasta with meat sauce.</p>
-      </div>
-      <div class="recipe-card">
-        <img src="images/sample2.jpg" alt="Vegan Stir Fry">
-        <h3>Vegan Stir Fry</h3>
-        <p>Colorful veggies and tofu in soy garlic sauce.</p>
-      </div>
-      <!-- Add more as needed -->
+    <section class="quick-note">
+      <h2>Why 10MinuteTastes?</h2>
+      <p>As students ourselves at BYU–Hawaii, we understand how hard it is to balance classes, work, and life. Too often, we skip meals or eat unhealthy snacks because we “don’t have time.”</p>
+      <p>That’s why this site exists—to help people like us eat well without wasting time or money.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 RecipeShare. All rights reserved.</p>
+    <p>&copy; 2025 10MinuteTastes | Made with ❤️ by students for students</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
