@@ -12,7 +12,7 @@
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
         <li><a href="funfacts.html">Fun Facts</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="feedback.html">Feedback</a></li>
@@ -20,48 +20,176 @@
     </nav>
   </header>
 
-  <main class="recipe-grid">
+  <main>
+    <section class="content-section" style="text-align: center;">
+      <h1>Quick & Tasty Recipes</h1>
+      <p>All recipes are under 10 minutes, student-budget friendly, and absolutely delicious!</p>
+    </section>
 
-    <div class="recipe-card">
-      <img src="images/avocado-toast.jpg" alt="Avocado Toast">
-      <h2>Avocado Toast</h2>
-      <p>Toast bread, mash avocado, sprinkle salt, pepper, and chili flakes.</p>
-    </div>
+    <section class="recipe-grid">
 
-    <div class="recipe-card">
-      <img src="images/banana-smoothie.jpg" alt="Banana Smoothie">
-      <h2>Banana Smoothie</h2>
-      <p>Blend banana, milk (or plant milk), and a spoon of honey.</p>
-    </div>
+      <!-- Avocado Toast -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/avocadotoast.jpg" alt="Avocado Toast" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by Tera Gigot</figcaption>
+        </figure>
+        <h2>Avocado Toast</h2>
+        <p>Toast bread, mash avocado, sprinkle salt, pepper, and chili flakes.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>2 slices bread</li>
+            <li>1 ripe avocado</li>
+            <li>Salt, pepper, chili flakes</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Toast the bread slices.</li>
+            <li>Mash avocado in a bowl.</li>
+            <li>Spread avocado on toast.</li>
+            <li>Sprinkle seasoning on top.</li>
+          </ol>
+        </details>
+      </article>
 
-    <div class="recipe-card">
-      <img src="images/egg-wrap.jpg" alt="Egg & Veggie Wrap">
-      <h2>Egg & Veggie Wrap</h2>
-      <p>Scramble an egg, toss in spinach, and roll in a tortilla.</p>
-    </div>
+      <!-- Banana Smoothie -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/bananasmoothie.jpg" alt="Banana Smoothie" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by Cooking with Elo</figcaption>
+        </figure>
+        <h2>Banana Smoothie</h2>
+        <p>Blend banana, milk (or plant milk), and a spoon of honey.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>1 ripe banana</li>
+            <li>1 cup milk or plant-based milk</li>
+            <li>1 tbsp honey</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Peel and slice the banana.</li>
+            <li>Combine all ingredients in a blender.</li>
+            <li>Blend until smooth and creamy.</li>
+            <li>Serve chilled.</li>
+          </ol>
+        </details>
+      </article>
 
-    <div class="recipe-card">
-      <img src="images/yogurt-parfait.jpg" alt="Yogurt Parfait">
-      <h2>Yogurt Parfait</h2>
-      <p>Layer yogurt, granola, and fresh berries for a delicious start.</p>
-    </div>
+      <!-- Egg & Veggie Wrap -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/eggveggiewrap.jpg" alt="Egg & Veggie Wrap" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by Taylor Dadds</figcaption>
+        </figure>
+        <h2>Egg & Veggie Wrap</h2>
+        <p>Scramble an egg, toss in spinach, and roll in a tortilla.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>1 egg</li>
+            <li>1 handful spinach</li>
+            <li>1 tortilla</li>
+            <li>Salt & pepper</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Scramble the egg in a pan.</li>
+            <li>Add spinach and cook briefly.</li>
+            <li>Place mixture in tortilla and roll up.</li>
+            <li>Serve warm.</li>
+          </ol>
+        </details>
+      </article>
 
-    <div class="recipe-card">
-      <img src="images/peanut-butter-toast.jpg" alt="Peanut Butter Toast">
-      <h2>Peanut Butter Toast</h2>
-      <p>Spread peanut butter on toast and top with banana slices.</p>
-    </div>
+      <!-- Yogurt Parfait -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/yogurtparfait.jpg" alt="Yogurt Parfait" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by Brandie Skibinski</figcaption>
+        </figure>
+        <h2>Yogurt Parfait</h2>
+        <p>Layer yogurt, granola, and fresh berries for a delicious start.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>1 cup yogurt</li>
+            <li>1/2 cup granola</li>
+            <li>1/2 cup mixed berries</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Spoon yogurt into a glass or bowl.</li>
+            <li>Add a layer of granola.</li>
+            <li>Add a layer of berries.</li>
+            <li>Repeat layers and serve.</li>
+          </ol>
+        </details>
+      </article>
 
-    <div class="recipe-card">
-      <img src="images/cucumber-sandwich.jpg" alt="Cucumber Sandwich">
-      <h2>Cucumber Sandwich</h2>
-      <p>Spread cream cheese and layer cucumber slices on soft bread.</p>
-    </div>
+      <!-- Peanut Butter Toast -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/pbtoast.jpg" alt="Peanut Butter Toast" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by My Mini Chefs</figcaption>
+        </figure>
+        <h2>Peanut Butter Toast</h2>
+        <p>Spread peanut butter on toast and top with banana slices.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>2 slices toast</li>
+            <li>2 tbsp peanut butter</li>
+            <li>1 banana, sliced</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Toast the bread slices.</li>
+            <li>Spread peanut butter evenly.</li>
+            <li>Top with banana slices.</li>
+          </ol>
+        </details>
+      </article>
 
+      <!-- Cucumber Sandwich -->
+      <article class="recipe-card">
+        <figure>
+          <img src="images/cucumbersandwich.jpg" alt="Cucumber Sandwich" style="width: 100%; border-radius: 15px; margin-bottom: 0.5rem;" />
+          <figcaption style="font-style: italic; font-size: 0.85rem; color: #555;">Photo by Emily Bites</figcaption>
+        </figure>
+        <h2>Cucumber Sandwich</h2>
+        <p>Spread cream cheese and layer cucumber slices on soft bread.</p>
+        <details>
+          <summary>View Recipe</summary>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>2 slices soft bread</li>
+            <li>2 tbsp cream cheese</li>
+            <li>1/2 cucumber, thinly sliced</li>
+            <li>Salt & pepper</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Spread cream cheese on both bread slices.</li>
+            <li>Layer cucumber slices evenly.</li>
+            <li>Sprinkle with salt and pepper.</li>
+            <li>Assemble sandwich and slice.</li>
+          </ol>
+        </details>
+      </article>
+
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 10MinuteTastes</p>
+    <p>&copy; 2025 10MinuteTastes | Made with ❤️ by students for students</p>
   </footer>
 </body>
 </html>
