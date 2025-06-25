@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fun Facts - 10MinuteTastes</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -50,10 +50,15 @@
       <section class="video-section" aria-labelledby="funfacts-heading-3">
         <h2 id="funfacts-heading-3" class="funfacts-title">🎥 Watch & Learn: Food Around the World</h2>
         <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz2S-Pjt3WQ?si=V_fIRmaDku_Os5ir"
-            title="YouTube video player" frameborder="0"
+          <iframe
+            width="560" height="315"
+            src="https://www.youtube.com/embed/Qz2S-Pjt3WQ?si=V_fIRmaDku_Os5ir"
+            title="YouTube video player"
+            style="border: none;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
         </div>
       </section>
 
@@ -63,7 +68,7 @@
           <label for="guessInput" class="visually-hidden">Your food guess</label>
           <p id="clue">I'm green, creamy, and great on toast.</p>
           <div class="game-input-group">
-            <input type="text" id="guessInput" placeholder="Your guess..." aria-describedby="feedback" autocomplete="off" />
+            <input type="text" id="guessInput" placeholder="Your guess..." aria-describedby="feedback" autocomplete="off">
             <button type="button" id="submitGuess">Submit</button>
           </div>
           <p id="feedback" aria-live="assertive"></p>

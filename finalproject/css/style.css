@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(to right, #ffc2d1, #fbd4b4); /* pink to peach */
+  background: linear-gradient(to right, #ffc2d1, #fbd4b4); 
   color: #5a2a37;
   text-align: center;
   padding: 2rem 1rem;
@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav ul li {
-  background-color: #dff2e0; /* mint */
+  background-color: #dff2e0; 
   border: 2px solid #b3e2c2;
   border-radius: 40px;
   transition: 0.3s ease;
@@ -290,14 +290,13 @@ details summary:hover {
   margin-bottom: 0.5rem;
 }
 
-/* 🔥 ADDED: Content Wrapper for Fun Facts Page */
+/* Fun Facts Page */
 .content-wrapper {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
-/* 🔥 ADDED: Fun Facts Section Styling */
 .facts-section {
   background-color: #fff0f3;
   margin-bottom: 2rem;
@@ -316,7 +315,6 @@ details summary:hover {
   margin-bottom: 0.6rem;
 }
 
-/* 🔥 ADDED: Center the video iframe */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -324,14 +322,14 @@ details summary:hover {
 
 .recipe-card img {
   width: 100%;
-  height: 200px; /* You can adjust this height if needed */
+  height: 200px; 
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
 
 
-/* ===== Feedback Page Form Styling - Scoped Only to Feedback Page ===== */
+/* Feedback Page */
 .feedback-page main.content {
   max-width: 600px;
   margin: 3rem auto 5rem;
@@ -396,7 +394,7 @@ details summary:hover {
   box-shadow: 0 6px 16px rgba(255, 80, 110, 0.6);
 }
 
-/* Responsive tweaks */
+/* Responsive  */
 @media (max-width: 600px) {
   .feedback-page main.content {
     margin: 2rem 1rem 4rem;
@@ -409,7 +407,7 @@ details summary:hover {
   }
 }
 
-/* ===== Updated Guess the Food Game Styling ===== */
+/* Guess the Food Game */
 .game-container {
   background-color: #fff0f3;
   max-width: 600px;
@@ -427,16 +425,15 @@ details summary:hover {
 .game-container h1 {
   color: #d94f6a;
   font-size: 2rem;
-  margin-bottom: 0; /* gap is handled by container */
+  margin-bottom: 0; 
 }
 
 .game-container p#clue {
   font-size: 1.2rem;
   color: #5a2a37;
-  margin: 0; /* remove extra margin */
+  margin: 0; 
 }
 
-/* Wrap input and button inside a flex container */
 .game-input-group {
   display: flex;
   width: 100%;
@@ -486,7 +483,7 @@ button:hover {
   margin-top: 1.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-  min-height: 1.5em; /* prevent layout shift when empty */
+  min-height: 1.5em; 
   color: #5a2a37;
 }
 
@@ -513,7 +510,6 @@ button:hover {
   overflow: hidden;
 }
 
-/* Layout wrapper for fun facts side-by-side on desktop */
 .facts-flex-container {
   display: block;
 }
