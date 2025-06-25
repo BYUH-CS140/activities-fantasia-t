@@ -408,3 +408,126 @@ details summary:hover {
     text-align: center;
   }
 }
+
+/* ===== Updated Guess the Food Game Styling ===== */
+.game-container {
+  background-color: #fff0f3;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(255, 180, 190, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.game-container h1 {
+  color: #d94f6a;
+  font-size: 2rem;
+  margin-bottom: 0; /* gap is handled by container */
+}
+
+.game-container p#clue {
+  font-size: 1.2rem;
+  color: #5a2a37;
+  margin: 0; /* remove extra margin */
+}
+
+/* Wrap input and button inside a flex container */
+.game-input-group {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  gap: 1rem;
+}
+
+/* Input styling */
+#guessInput {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ffd5d9;
+  border-radius: 15px;
+  flex: 1;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#guessInput:focus {
+  outline: none;
+  border-color: #cc3f5a;
+  box-shadow: 0 0 8px rgba(204, 63, 90, 0.3);
+}
+
+/* Button styling */
+button {
+  background-color: #ff9aa2;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0; /* prevent shrinking */
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #ff748c;
+  box-shadow: 0 6px 16px rgba(255, 80, 110, 0.4);
+}
+
+/* Feedback text */
+#feedback {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-height: 1.5em; /* prevent layout shift when empty */
+  color: #5a2a37;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 480px) {
+  .game-input-group {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+/* Visually hidden class for accessibility */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Layout wrapper for fun facts side-by-side on desktop */
+.facts-flex-container {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .facts-flex-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .facts-flex-container > .facts-section {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+

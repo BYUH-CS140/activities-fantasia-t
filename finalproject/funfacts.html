@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fun Facts - 10MinuteTastes</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header>
     <div class="logo">10MinuteTastes</div>
@@ -23,30 +25,48 @@
   <main class="content">
     <div class="content-wrapper">
 
-      <section class="facts-section">
-        <h1 class="funfacts-title">🍽️ Fun Food Facts</h1>
-        <p class="facts-intro">Did you know these tasty tidbits? Dive into some surprising food facts!</p>
-        <ul class="facts-list">
-          <li>🍍 Pineapples regenerate! You can plant a pineapple top and grow a new one.</li>
-          <li>🥕 Carrots used to be purple before the 17th century!</li>
-          <li>🍫 Chocolate was once used as currency by the Aztecs.</li>
-        </ul>
-      </section>
+      <div class="facts-flex-container">
+        <section class="facts-section" aria-labelledby="funfacts-heading-1">
+          <h1 id="funfacts-heading-1" class="funfacts-title">🍽️ Fun Food Facts</h1>
+          <p class="facts-intro">Did you know these tasty tidbits? Dive into some surprising food facts!</p>
+          <ul class="facts-list">
+            <li>🍍 Pineapples regenerate! You can plant a pineapple top and grow a new one.</li>
+            <li>🥕 Carrots used to be purple before the 17th century!</li>
+            <li>🍫 Chocolate was once used as currency by the Aztecs.</li>
+          </ul>
+        </section>
 
-      <section class="facts-section">
-        <h2 class="funfacts-title">🌍 Global Bites & Tasty Traditions</h2>
-        <p class="facts-intro">From Japan to Italy, explore fun food facts from around the world!</p>
-        <ul class="facts-list">
-          <li>🇯🇵🍉 In Japan, square watermelons are grown for easier stacking.</li>
-          <li>🇮🇹🍝 Italy has over 600 pasta shapes!</li>
-          <li>🇮🇳🌶️ India is the world’s largest producer of spices.</li>
-        </ul>
-      </section>
+        <section class="facts-section" aria-labelledby="funfacts-heading-2">
+          <h2 id="funfacts-heading-2" class="funfacts-title">🌍 Global Bites & Tasty Traditions</h2>
+          <p class="facts-intro">From Japan to Italy, explore fun food facts from around the world!</p>
+          <ul class="facts-list">
+            <li>🇯🇵🍉 In Japan, square watermelons are grown for easier stacking.</li>
+            <li>🇮🇹🍝 Italy has over 600 pasta shapes!</li>
+            <li>🇮🇳🌶️ India is the world’s largest producer of spices.</li>
+          </ul>
+        </section>
+      </div>
 
-      <section class="video-section">
-        <h2 class="funfacts-title">🎥 Watch & Learn: Food Around the World</h2>
+      <section class="video-section" aria-labelledby="funfacts-heading-3">
+        <h2 id="funfacts-heading-3" class="funfacts-title">🎥 Watch & Learn: Food Around the World</h2>
         <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz2S-Pjt3WQ?si=V_fIRmaDku_Os5ir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz2S-Pjt3WQ?si=V_fIRmaDku_Os5ir"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="facts-section" aria-labelledby="funfacts-heading-4">
+        <h2 id="funfacts-heading-4" class="funfacts-title">🎮 Guess the Food!</h2>
+        <div class="game-container" role="region" aria-live="polite" aria-atomic="true">
+          <label for="guessInput" class="visually-hidden">Your food guess</label>
+          <p id="clue">I'm green, creamy, and great on toast.</p>
+          <div class="game-input-group">
+            <input type="text" id="guessInput" placeholder="Your guess..." aria-describedby="feedback" autocomplete="off" />
+            <button type="button" id="submitGuess">Submit</button>
+          </div>
+          <p id="feedback" aria-live="assertive"></p>
         </div>
       </section>
 
@@ -56,5 +76,8 @@
   <footer>
     <p>&copy; 2025 10MinuteTastes</p>
   </footer>
+
+  <script src="game.js"></script>
 </body>
+
 </html>
